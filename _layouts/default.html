@@ -2,19 +2,34 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-<head>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Untyped" />
 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="author" content="Untyped" />
+        <link rel="stylesheet" href="/styles/screen.css" type="text/css" media="screen,projection" />
 
-<title>{{ page.title }}</title>
+        <title>{{ page.title }}</title>
+    </head>
+    
+    <body>
+        <div id="header-outer">
+            <div id="header-inner">
+                <h1>{{ page.title }}</h1>
+            </div>
+        </div>
 
-</head>
-
-<body>
-
-{{ content }}
-
-</body>
+        <div id="content-outer">
+            <div id="content-inner">
+                {{ content }}
+            </div>
+        </div>
+        
+        <div id="footer-outer">
+            <div id="footer-inner">
+                Copyright 2010 <a href="http://untyped.com/contact.html" class="nocolor">Untyped Ltd</a>.
+                <a href="http://untyped.com/terms.html" class="nocolor">Terms of use</a>.
+            </div>
+        </div>
+    </body>
 
 </html>
